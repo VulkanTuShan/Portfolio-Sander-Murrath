@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestructureerd Bekabelen</title>
+   <!--reset bootstrap with css-->
+   <link href="css/reset.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,13 +18,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
   </script>
-  <link href="/css/styles.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <!-- eigen geschreven css voor jouw html-bestand -->
+     <!--javascript voor het huidige jaar toe te voegen aan de footer-->
+  <script src="js/script.js" defer></script>
+  <!--eigen javascript voor de werking van het menu-->
+  <script src="js/menu.js" defer></script>
 </head>
  
 <body>
   <nav class="navbar">
-    <button class="navbar-toggler" type="button" id="menu-toggle">
+    <button class="navbar-toggler bg-light" type="button" id="menu-toggle">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="ms-auto">
@@ -32,15 +38,15 @@
   </nav>
   <div class="fly-out-menu mobile-hidden" id="sidebar">
     <ul>
-      <li><a href="/index.html"> <img src="/assets/images/house-icon.png" alt="afbeelding voor home pagina">home</a></li>
-      <li><a href="/contact.html"> <img src="/assets/images/contact.png" alt="afbeelding voor contact pagina">contact</a></li>
-      <li><a href="/portfolio.html"> <img src="/assets/images/portfolio.png" alt="afbeelding voor portfolio">portfolio</a></li>
-      <li><a href="/bekabeling.html"> <img src="/assets/images/bekabeling.png" alt="afbeelding voor project bekabeling">bekabeling</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 2</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 3</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 4</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 5</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 6</a></li>
+      <li><a href="index.html"> <i class="bi bi-house"></i>Home</a></li>
+      <li><a href="contact.html"> <i class="bi bi-envelope"></i> Contact</a></li>
+      <li><a href="portfolio.html"> <i class="bi bi-file-earmark-text"></i> Portfolio</a></li>
+      <li><a href="bekabeling.html"> <i class="bi bi-ethernet"></i> Bekabeling</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 2</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 3</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 4</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 5</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 6</a></li>
     </ul>
   </div>
   <div class="overlay" id="overlay"></div>
@@ -50,35 +56,117 @@
     <div class="row bg-body-primary">
       <h1 class="font-weight-bold text-center">Gestructureerd Bekabelen</h1>
       <div class="col-md-6">
-      <article>
-        <h2> titel</h2>
-        <p>verschillende paragrafen</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, fugit.</p>
-      </article>
-      <figure>
-        <img src="/assets/images/logo.png" height="200" width="200" alt="voorlopig">
-        <figcaption>foto uitleg</figcaption>
-      </figure>
-      <article>
-        <h2>titel</h2>
-        <p>verchillende paragrafen</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa.</p>
-      </article>
-      </div>
-      <div class="col-md-6">
-        <figure>
-          <img src="assets/images/logo.png" heigth="200" width="200" alt="voorlopig">
-          <figcaption>foto uitleg</figcaption>
-        </figure>
         <article>
-          <h2>titel</h2>
-          <p>verschillende paragrafen</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, qui.</p>  
+          <h2> Fysiek bekabelingsplan </h2>
+          <p>In dit project werd de opdracht gegeven om een bekabelingsplan uit te tekenen voor een klein bedrijf. Er werden een aantal details gegeven zoals het aantal werknemers, end devices en wat het bedrijf nodig heeft om te functioneren. plus de mogelijke vragen en problemen die in de toekomst opgelost moeten worden. </p>
+          <p>In totaal moesten er 4 onderdelen opgeleverd worden. Een bekabelingsplan met Packet Tracer, een patchplan, een racklayout en een aankooplijst voor de verschillende onderdelen die gebruikt worden in het plan. </p>
+          <p>Hier rechts is het plan uitgetekend in Packet tracer te zien. Hierin wordt de fysieke structuur uitgetekend inclusief de end devices en netwerkdevices. Dit geeft een goed idee van welke werken er plaats moeten vinden en wat er wel en niet mogelijk is. </p>
         </article>
         <figure>
-          <img src="/assets/images/logo.png" height="200" width="200" alt="voorlopig">
-          <figcaption>uitleg foto</figcaption>
+          <img src="assets/images/patchplan.png" height="400" width="550" alt="patchplan deel 1 copyright sander murrath">
+          <figcaption>Patchplan deel 1</figcaption>
+          <img src="assets/images/patchplan2.png" height="400" width="550" alt="patchplan deel 2 copyright sander murrath">
+          <figcaption>Patchplan deel 2</figcaption>
         </figure>
+        <article>
+          <h2>Racklayout</h2>
+          <p>De racklayout is gebaseerd op wat er te zien is en gestructureerd is in het fysieke bekabelingsplan. Dit als basis genomen om een racklaytou te tekenen.</p>
+          <p>Het belangrijke gedeelte van de racklayout is documenteren welke apparaten waar steken en hoeveel ruimte dat deze innemen op de serverrack</p>
+          <p>Het laatste deel hiervan is de bekabeling tussen alle netwerkcomponenten. Kijken dat dit op elkaar is afgestemd.</p>
+        </article>
+        <figure>
+          <img src="assets/images/aankooplijst.png" height="400" width="550" alt="aankooplijst copyright sander murrath">
+          <figcaption>screenshot van de aankooplijst</figcaption>
+        </figure>
+      </div>
+
+
+
+
+
+      <div class="col-md-6">
+        <figure>
+          <img src="assets/images/bekabekingsplan.png" heigth="600" width="600" alt="bekabelingsplan copyright sander murrath">
+          <figcaption>Het PacketTracer bekabelingsplan</figcaption>
+        </figure>
+        <article>
+          <h2>Patchplan</h2>
+          <p>Voor het patchplan moet elke kabel naar elk device, naar elke wallmount en naar elk patchpanel en switch terug kunnen getraceerd worden. Dit zorgt ervoor dat je alles kan terugvinden en fouten makkelijker kan corrigeren. Een goeie documentatie is heel belangrijk hiervoor.</p>
+          <p>Het patchplan bij deze opdracht is opgesteld werkende per patchpanel. Elke poort op elke wallmount, switch en patchpanel heeft een unieke code die aangeeft welke switch, wallmount of patchpanel en welke poort op dit device er wordt gebruikt voor deze kabel. Ook kan je de locatie in het gebouw bepalen door code in de naam.</p>
+          <p>Om dit op een geordende en gemakkelijke manier te doen is het bekabelingsplan is samenwerking met het fysieke plan gemaakt. Elke kabel die daar getrokken wordt is direct in het bekabelingsplan opgenomen en alle benameningen zijn juist gezet</p>
+          <p><table class="table table-bordered text-center">
+            <thead class="table-dark border-bottom fw-bold">
+                <tr>
+                    <th colspan="2">Kleuren</th>
+                    <th colspan="2">Afkortingen</th>
+                </tr>
+                <tr>
+                    <th>Kleur</th>
+                    <th>Apparaat</th>
+                    <th>Afkorting</th>
+                    <th>Betekenis</th>
+                </tr>
+            </thead>
+            <tbody class="table-dark">
+                <tr>
+                    <td>Groen</td>
+                    <td>PC’s</td>
+                    <td>V</td>
+                    <td>Verdiep</td>
+                </tr>
+                <tr>
+                    <td>Blauw</td>
+                    <td>IP Phone</td>
+                    <td>K</td>
+                    <td>Kantoor</td>
+                </tr>
+                <tr>
+                    <td>Geel</td>
+                    <td>MFP</td>
+                    <td>W</td>
+                    <td>Workstation</td>
+                </tr>
+                <tr>
+                    <td>Rood</td>
+                    <td>Access Point</td>
+                    <td>PR</td>
+                    <td>Router/Printer</td>
+                </tr>
+                <tr>
+                    <td>Paars</td>
+                    <td>Docking Station</td>
+                    <td>Res</td>
+                    <td>Reserve</td>
+                </tr>
+                <tr>
+                    <td>Grijs</td>
+                    <td>Reserve</td>
+                    <td>U</td>
+                    <td>Uninterrupted Power Supply</td>
+                </tr>
+            </tbody>
+        </table></p>
+        <p>De bovenstaande tabel geeft een verduidelijking van de afkortingen en kleuren die er gebruikt worden in het plan zelf. De namen die bestaan uit een samenstelling van de afkortingen zorden hierdoor snel duidelijk.</p>
+        </article>
+        <div class="row">
+          <div class="col-md-6">
+        <figure>
+          <img src="assets/images/racklayout.png" height="300" width="300" alt="racklayout copyright sander murrath">
+          <figcaption>racklayout in packet tracer</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <figure>
+            <img src="assets/images/racklayout2.png" height="300" width="200" alt="racklayout2 copyright sander murrath">
+            <figcaption>racklayout uitgewerkt</figcaption>
+          </figure>
+        </div>
+        <article>
+        <h2>Aankooplijst</h2>
+        <p>Het laatste deel is de aankooplijst. Hierin worden, buiten de end devices, alle gebruikte apparatuur in opgelijst. Zodat alles een rpijskaartje krijgt. Alles van kabels tot sxitches tot allmounts en kabelgoten wordt in de lijst opgenomen. </p>
+        <p>Belangrijk bij deze aankooplijst is dat er links zijn naar de datasheets. Deze worden gemaakt door de producten van het device en zorgt ervoor dat je alle correcte specificaties hebt. Hier kan je dan op terugvallen mocht dit nodig zijn. En je weet veel beter wat je in huis haalt van devices. Dit laatste is ook belangrijk voor de certificering van de devices.</p>
+      </article>
+        </div>
       </div>
     </div>
   </div>
@@ -86,11 +174,10 @@
 
 <footer class="py-4 text-center">
   <div class="container">
-      <a class="" href="/index.html">Home</a>
-      <a class="" href="/contact.html">Contact</a>
-      <p class="text-light">Website gemaakt door Sander Murrath</p>
+      <a class="" href="index.html">Home</a>
+      <a class="" href="contact.html">Contact</a>
+      <p class="text-light">Website gemaakt door Sander Murrath <i class="bi bi-c-circle"></i><span id="year"></span></p>
   </div>   
 </footer>
 </body>
-<script src="/js/menu.js"></script>
 </html>

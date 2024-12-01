@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+   <!--reset bootstrap with css-->
+   <link href="css/reset.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,13 +18,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
   </script>
-  <link href="/css/styles.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <!-- eigen geschreven css voor jouw html-bestand -->
+     <!--javascript voor het huidige jaar toe te voegen aan de footer-->
+  <script src="js/script.js" defer></script>
+  <!--eigen javascript voor de werking van het menu-->
 </head>
  
 <body>
   <nav class="navbar">
-    <button class="navbar-toggler" type="button" id="menu-toggle">
+    <button class="navbar-toggler bg-light" type="button" id="menu-toggle">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="ms-auto">
@@ -32,15 +37,15 @@
   </nav>
   <div class="fly-out-menu mobile-hidden" id="sidebar">
     <ul>
-      <li><a href="/index.html"> <img src="/assets/images/house-icon.png" alt="afbeelding voor home pagina">home</a></li>
-      <li><a href="/contact.html"> <img src="/assets/images/contact.png" alt="afbeelding voor contact page">contact</a></li>
-      <li><a href="/portfolio.html"> <img src="/assets/images/portfolio.png" alt="afbeelding voor portfolio">portfolio</a></li>
-      <li><a href="/bekabeling.html"> <img src="/assets/images/bekabeling.png" alt="afbeelding voor project bekabeling">bekabeling</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 2</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 3</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 4</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 5</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 6</a></li>
+      <li><a href="index.html"> <i class="bi bi-house"></i>Home</a></li>
+      <li><a href="contact.html"> <i class="bi bi-envelope"></i> Contact</a></li>
+      <li><a href="portfolio.html"> <i class="bi bi-file-earmark-text"></i> Portfolio</a></li>
+      <li><a href="bekabeling.html"> <i class="bi bi-ethernet"></i> Bekabeling</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 2</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 3</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 4</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 5</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 6</a></li>
     </ul>
   </div>
   <div class="overlay" id="overlay"></div>
@@ -52,35 +57,35 @@
       <p>Op deze pagina worden de projecten voorgesteld waar ik deel van ben of was.<br> Dit om aan te tonen waar ik al mee bezig ben geweest en wat er op dit moment gaande is in mijn professioneel leven.</p>
       <div class="col-xxl-6">
         <figure class="figure mb-3">
+          <h4>Gestructureerd Bekabelen</h4>
+          <a href="bekabeling.html"><img class="rounded figure-img" src="assets/images/bekabekingsplan.png" alt="bekabelingplan" height="300" width="500"></a>
+          <figcaption class="figcaption">In dit project werd de opdracht gegeven om een plan uit te tekenen om de bekabeling van een klein bedrijf op orde te zetten.</figcaption>
+        </figure>
+        <figure class="figure mb-3">
           <h4>titel van het project</h4>
-          <a href="/bekabeling.html"><img class="rounded figure-img" src="/assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
+          <a href="project1.html"><img class="rounded figure-img" src="assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
           <figcaption class="figcaption">korte uitleg over het project</figcaption>
         </figure>
         <figure class="figure mb-3">
           <h4>titel van het project</h4>
-          <a href="/project1.html"><img class="rounded figure-img" src="/assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
-          <figcaption class="figcaption">korte uitleg over het project</figcaption>
-        </figure>
-        <figure class="figure mb-3">
-          <h4>titel van het project</h4>
-          <a href="/project1.html"><img class="rounded figure-img" src="/assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
+          <a href="project1.html"><img class="rounded figure-img" src="assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
           <figcaption class="figcaption">korte uitleg over het project</figcaption>
         </figure>
       </div>
       <div class="col-xxl-6">
         <figure class="figure mb-3">
           <h4>titel van het project</h4>
-          <a href="/project1.html"><img class="rounded figure-img" src="/assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
+          <a href="project1.html"><img class="rounded figure-img" src="assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
           <figcaption class="figcaption">korte uitleg over het project</figcaption>
         </figure>
         <figure class="figure mb-3">
           <h4>titel van het project</h4>
-          <a href="/project1.html"><img class="rounded figure-img" src="/assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
+          <a href="project1.html"><img class="rounded figure-img" src="assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
           <figcaption class="figcaption">korte uitleg over het project</figcaption>
         </figure>
         <figure class="figure mb-3">
           <h4>titel van het project</h4>
-          <a href="/project1.html"><img class="rounded figure-img" src="/assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
+          <a href="project1.html"><img class="rounded figure-img" src="assets/images/oefening_galgje.png" alt="voorlopig" height="300" width="500"></a>
           <figcaption class="figcaption">korte uitleg over het project</figcaption>
         </figure>
       </div>
@@ -90,11 +95,10 @@
 
 <footer class="py-4 text-center">
   <div class="container">
-      <a class="" href="/index.html">Home</a>
-      <a class="" href="/contact.html">Contact</a>
-      <p class="text-light">Website gemaakt door Sander Murrath</p>
+      <a class="" href="index.html">Home</a>
+      <a class="" href="contact.html">Contact</a>
+      <p class="text-light">Website gemaakt door Sander Murrath <i class="bi bi-c-circle"></i><span id="year"></span></p>
   </div>   
 </footer>
 </body>
-<script src="/js/menu.js"></script>
 </html>

@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
+   <!--reset bootstrap with css-->
+   <link href="css/reset.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,13 +18,25 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
   </script>
-  <link href="/css/styles.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <!-- eigen geschreven css voor jouw html-bestand -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+   <link href="css/map.css" rel="stylesheet">
+     <!--javascript voor het huidige jaar toe te voegen aan de footer-->
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/script.js" defer></script>
+  <!--eigen javascript voor werking van het menu-->
+  <script src="js/menu.js" defer></script>
+  <!--eigen javascript om een kaart toe te voegen-->
+  <script src="js/maplier.js" defer></script>
 </head>
  
 <body>
   <nav class="navbar">
-    <button class="navbar-toggler" type="button" id="menu-toggle">
+    <button class="navbar-toggler bg-light" type="button" id="menu-toggle">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="ms-auto">
@@ -34,15 +48,15 @@
   </nav>
   <div class="fly-out-menu mobile-hidden" id="sidebar">
     <ul>
-      <li><a href="/index.html"> <img src="/assets/images/house-icon.png" alt="Afbeelding voor homepagina">home</a></li>
-      <li><a href="/contact.html"> <img src="/assets/images/contact.png" alt="afbeelding voor contact pagina">contact</a></li>
-      <li><a href="/portfolio.html"> <img src="/assets/images/portfolio.png" alt="afbeelding voor portfolio overzicht">portfolio</a></li>
-      <li><a href="/bekabeling.html"> <img src="/assets/images/bekabeling.png" alt="afbeelding voor project bekabeling">bekabeling</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 2</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 3</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 4</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 5</a></li>
-      <li><a href="#"> <img src="/assets/images/logo.png" alt="voorlopig">project 6</a></li>
+      <li><a href="index.html"> <i class="bi bi-house"></i>Home</a></li>
+      <li><a href="contact.html"> <i class="bi bi-envelope"></i> Contact</a></li>
+      <li><a href="portfolio.html"> <i class="bi bi-file-earmark-text"></i> Portfolio</a></li>
+      <li><a href="bekabeling.html"> <i class="bi bi-ethernet"></i> Bekabeling</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 2</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 3</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 4</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 5</a></li>
+      <li><a href="#"> <i class="bi bi-0-square"></i> Project 6</a></li>
     </ul>
   </div>
   <div class="overlay" id="overlay"></div>
@@ -105,11 +119,38 @@
           </form>
         </div>
         <div class="col-md-6">
+          <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
+          <p>Sander Murrath<br>
+            +32 048 59 63 47
+            <a href="mailto:example@gmail.com">s158329@ap.be</a><br>
+          </p>
+          <ul class="list-inline socials">
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com" target="_blank">
+                <i class="bi bi-youtube blauwgrijs fs-6"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram blauwgrijs fs-6"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook blauwgrijs fs-6"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/" target="_blank">
+                <i class="bi bi-twitter blauwgrijs fs-6"></i>
+              </a>
+            </li>
+          </ul>
+          <section id="map" class="row">
+            <div id="liermap"></div>
+          </section>
           <figure>
-            <p>&nbsp;</p>
-            <img src="/assets/images/artificial-intelligence.jpg" alt="opvulfoto" height="200" width="600">
-            <img src="/assets/images/network.jpg"  alt="opvulfoto" height="300" width="600">
-            <img src="/assets/images/server.jpg" alt="opvulfoto" height="400" width="600">
+            <img src="assets/images/server.jpg" alt="opvulfoto" height="400" width="600">
           </figure>
         </div>
     </div>
@@ -118,11 +159,10 @@
 
 <footer class="py-4 text-center">
   <div class="container">
-      <a class="" href="/index.html">Home</a>
-      <a class="" href="/contact.html">Contact</a>
-      <p class="text-light">Website gemaakt door Sander Murrath</p>
+      <a class="" href="index.html">Home</a>
+      <a class="" href="contact.html">Contact</a>
+      <p class="text-light">Website gemaakt door Sander Murrath <i class="bi bi-c-circle"></i><span id="year"></span></p>
   </div>   
 </footer>
 </body>
-<script src="/js/menu.js"></script>
 </html>
