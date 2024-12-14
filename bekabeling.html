@@ -27,158 +27,161 @@
 </head>
  
 <body>
-  <nav class="navbar">
-    <button class="navbar-toggler bg-light" type="button" id="menu-toggle">
-      <span class="navbar-toggler-icon"></span>
+  <header class="">
+    <button class="navbar-toggler bg-light btn-lg p-2" type="button" id="menu-toggle">
+      <i class="bi bi-list"></i>
     </button>
-    <div class="ms-auto">
-        <h1 class="text-light header-title">Portfolio Sander Murrath</h1>
-    </div>
-    <div class="ms-auto"> </div>
-  </nav>
-  <div class="fly-out-menu mobile-hidden" id="sidebar">
-    <ul>
-      <li><a href="index.html"> <i class="bi bi-house"></i>Home</a></li>
-      <li><a href="contact.html"> <i class="bi bi-envelope"></i> Contact</a></li>
-      <li><a href="portfolio.html"> <i class="bi bi-file-earmark-text"></i> Portfolio</a></li>
-      <li><a href="bekabeling.html"> <i class="bi bi-ethernet"></i> WebWiz</a></li>
-      <li><a href="python.html  "> <i class="bi bi-filetype-py"></i> Python</a></li>
-      <li><a href="routering.html"> <i class="bi bi-router"></i> Routering</a></li>
-      <li><a href="scripting.html"> <i class="bi bi-filetype-sh"></i> Scripting</a></li>
-      <li><a href="SNBproject.html"> <i class="bi bi-kanban-fill"></i> SNB-Project</a></li>
-      <li><a href="stage.html"> <i class="bi bi-person-workspace"></i> Stage</a></li>
-    </ul>
-  </div>
+        <h1 class="text-light text-center header-title">Portfolio Sander Murrath</h1>
+  </header>
+  <aside class="fly-out-menu mobile-hidden" id="sidebar">
+    <nav class="">
+      <ul>
+        <li><a href="index.html" class="nav-link text-white ps-1"> <i class="bi bi-house"></i>Home</a></li>
+        <li><a href="portfolio.html" class="nav-link text-white ps-1"> <i class="bi bi-file-earmark-text"></i> Portfolio</a></li>
+        <li><a href="bekabeling.html" class="nav-link text-white ps-5"> <i class="bi bi-ethernet"></i> WebWiz</a></li>
+        <li><a href="python.html" class="nav-link text-white ps-5"> <i class="bi bi-filetype-py"></i> Python</a></li>
+        <li><a href="routering.html" class="nav-link text-white ps-5"> <i class="bi bi-router"></i> Routering</a></li>
+        <li><a href="scripting.html" class="nav-link text-white ps-5"> <i class="bi bi-filetype-sh"></i> Scripting</a></li>
+        <li><a href="SNBproject.html" class="nav-link text-white ps-5"> <i class="bi bi-kanban-fill"></i> SNB-Project</a></li>
+        <li><a href="stage.html" class="nav-link text-white ps-5"> <i class="bi bi-person-workspace"></i> Stage</a></li>
+        <li><a href="contact.html" class="nav-link text-white ps-1"> <i class="bi bi-envelope"></i> Contact</a></li>
+      </ul>
+      <nav>
+  </aside>
   <div class="overlay" id="overlay"></div>
-
-<main class="py-5">
-  <div class="container text-light">
-    <div class="row bg-body-primary">
-      <h1 class="font-weight-bold text-center">Project WebWiz</h1>
-      <div class="col-md-6">
-        <article>
-          <h2> Fysiek bekabelingsplan </h2>
-          <p>In dit project werd de opdracht gegeven om een bekabelingsplan uit te tekenen voor een klein bedrijf. Er werden een aantal details gegeven zoals het aantal werknemers, end devices en wat het bedrijf nodig heeft om te functioneren. plus de mogelijke vragen en problemen die in de toekomst opgelost moeten worden. </p>
-          <p>In totaal moesten er 4 onderdelen opgeleverd worden. Een bekabelingsplan met Packet Tracer, een patchplan, een racklayout en een aankooplijst voor de verschillende onderdelen die gebruikt worden in het plan. </p>
-          <p>Hier rechts is het plan uitgetekend in Packet tracer te zien. Hierin wordt de fysieke structuur uitgetekend inclusief de end devices en netwerkdevices. Dit geeft een goed idee van welke werken er plaats moeten vinden en wat er wel en niet mogelijk is. </p>
-        </article>
-        <hr class="my-4 border-primary border-2">
-        <figure>
-          <img src="assets/images/patchplan.png" height="400" width="550" alt="patchplan deel 1 copyright sander murrath">
-          <figcaption>Patchplan deel 1</figcaption>
-          <img src="assets/images/patchplan2.png" height="400" width="550" alt="patchplan deel 2 copyright sander murrath">
-          <figcaption>Patchplan deel 2</figcaption>
-        </figure>
-        <hr class="my-4 border-primary border-2">
-        <article>
-          <h2>Racklayout</h2>
-          <p>De racklayout is gebaseerd op wat er te zien is en gestructureerd is in het fysieke bekabelingsplan. Dit als basis genomen om een racklaytou te tekenen.</p>
-          <p>Het belangrijke gedeelte van de racklayout is documenteren welke apparaten waar steken en hoeveel ruimte dat deze innemen op de serverrack</p>
-          <p>Het laatste deel hiervan is de bekabeling tussen alle netwerkcomponenten. Kijken dat dit op elkaar is afgestemd.</p>
-        </article>
-        <hr class="my-4 border-primary border-2">
-        <figure>
-          <img src="assets/images/aankooplijst.png" height="400" width="550" alt="aankooplijst copyright sander murrath">
-          <figcaption>Screenshot van de aankooplijst</figcaption>
-        </figure>
-        <hr class="my-4 border-primary border-2">
-      </div>
-
-
-
-
-
-      <div class="col-md-6">
-        <figure>
-          <img src="assets/images/bekabekingsplan.png" heigth="600" width="600" alt="bekabelingsplan copyright sander murrath">
-          <figcaption>Het PacketTracer bekabelingsplan</figcaption>
-        </figure>
-        <hr class="my-4 border-primary border-2">
-        <article>
-          <h2>Patchplan</h2>
-          <p>Voor het patchplan moet elke kabel naar elk device, naar elke wallmount en naar elk patchpanel en switch terug kunnen getraceerd worden. Dit zorgt ervoor dat je alles kan terugvinden en fouten makkelijker kan corrigeren. Een goeie documentatie is heel belangrijk hiervoor.</p>
-          <p>Het patchplan bij deze opdracht is opgesteld werkende per patchpanel. Elke poort op elke wallmount, switch en patchpanel heeft een unieke code die aangeeft welke switch, wallmount of patchpanel en welke poort op dit device er wordt gebruikt voor deze kabel. Ook kan je de locatie in het gebouw bepalen door code in de naam.</p>
-          <p>Om dit op een geordende en gemakkelijke manier te doen is het bekabelingsplan is samenwerking met het fysieke plan gemaakt. Elke kabel die daar getrokken wordt is direct in het bekabelingsplan opgenomen en alle benameningen zijn juist gezet</p>
-          <p><table class="table table-bordered text-center">
-            <thead class="table-dark border-bottom fw-bold">
-                <tr>
-                    <th colspan="2">Kleuren</th>
-                    <th colspan="2">Afkortingen</th>
-                </tr>
-                <tr>
-                    <th>Kleur</th>
-                    <th>Apparaat</th>
-                    <th>Afkorting</th>
-                    <th>Betekenis</th>
-                </tr>
-            </thead>
-            <tbody class="table-dark">
-                <tr>
-                    <td>Groen</td>
-                    <td>PC’s</td>
-                    <td>V</td>
-                    <td>Verdiep</td>
-                </tr>
-                <tr>
-                    <td>Blauw</td>
-                    <td>IP Phone</td>
-                    <td>K</td>
-                    <td>Kantoor</td>
-                </tr>
-                <tr>
-                    <td>Geel</td>
-                    <td>MFP</td>
-                    <td>W</td>
-                    <td>Workstation</td>
-                </tr>
-                <tr>
-                    <td>Rood</td>
-                    <td>Access Point</td>
-                    <td>PR</td>
-                    <td>Router/Printer</td>
-                </tr>
-                <tr>
-                    <td>Paars</td>
-                    <td>Docking Station</td>
-                    <td>Res</td>
-                    <td>Reserve</td>
-                </tr>
-                <tr>
-                    <td>Grijs</td>
-                    <td>Reserve</td>
-                    <td>U</td>
-                    <td>Uninterrupted Power Supply</td>
-                </tr>
-            </tbody>
-        </table></p>
-        <p>De bovenstaande tabel geeft een verduidelijking van de afkortingen en kleuren die er gebruikt worden in het plan zelf. De namen die bestaan uit een samenstelling van de afkortingen zorden hierdoor snel duidelijk.</p>
-        </article>
-        <hr class="my-4 border-primary border-2">
-        <div class="row">
-          <div class="col-md-6">
-        <figure>
-          <img src="assets/images/racklayout.png" height="300" width="300" alt="racklayout copyright sander murrath">
-          <figcaption>Racklayout in packet tracer</figcaption>
-          </figure>
+  <main class="py-5">
+    <div class="container text-light">
+      <div class="row bg-body-primary">
+        <h1 class="font-weight-bold text-center">Project WebWiz</h1>
+        <div class="col-xl-6">
+          <article>
+            <h2 class="text-center"> Fysiek bekabelingsplan </h2>
+            <p>In dit project werd de opdracht gegeven om een bekabelingsplan uit te tekenen voor een klein bedrijf. Er werden een aantal details gegeven zoals het aantal werknemers, end devices en wat het bedrijf nodig heeft om te functioneren. plus de mogelijke vragen en problemen die in de toekomst opgelost moeten worden. </p>
+            <p>In totaal moesten er 4 onderdelen opgeleverd worden. Een bekabelingsplan met Packet Tracer, een patchplan, een racklayout en een aankooplijst voor de verschillende onderdelen die gebruikt worden in het plan. </p>
+            <p>Hier rechts is het plan uitgetekend in Packet tracer te zien. Hierin wordt de fysieke structuur uitgetekend inclusief de end devices en netwerkdevices. Dit geeft een goed idee van welke werken er plaats moeten vinden en wat er wel en niet mogelijk is. </p>
+          </article>
         </div>
-        <div class="col-md-6">
+        <div class="col-xl-6">
           <figure>
-            <img src="assets/images/racklayout2.png" height="300" width="200" alt="racklayout2 copyright sander murrath">
-            <figcaption>Racklayout uitgewerkt</figcaption>
+            <img src="assets/images/bekabekingsplan.png" class="img-fluid" alt="bekabelingsplan copyright sander murrath">
+            <figcaption>Het PacketTracer bekabelingsplan</figcaption>
           </figure>
         </div>
         <hr class="my-4 border-primary border-2">
-        <article>
-        <h2>Aankooplijst</h2>
+  
+  
+  
+        <div class="col-xl-6">
+  <article>
+            <h2 class="text-center">Patchplan</h2>
+            <p>Voor het patchplan moet elke kabel naar elk device, naar elke wallmount en naar elk patchpanel en switch terug kunnen getraceerd worden. Dit zorgt ervoor dat je alles kan terugvinden en fouten makkelijker kan corrigeren. Een goeie documentatie is heel belangrijk hiervoor.</p>
+            <p>Het patchplan bij deze opdracht is opgesteld werkende per patchpanel. Elke poort op elke wallmount, switch en patchpanel heeft een unieke code die aangeeft welke switch, wallmount of patchpanel en welke poort op dit device er wordt gebruikt voor deze kabel. Ook kan je de locatie in het gebouw bepalen door code in de naam.</p>
+            <p>Om dit op een geordende en gemakkelijke manier te doen is het bekabelingsplan is samenwerking met het fysieke plan gemaakt. Elke kabel die daar getrokken wordt is direct in het bekabelingsplan opgenomen en alle benameningen zijn juist gezet</p>
+            <p><table class="table table-bordered text-center">
+              <thead class="table-dark border-bottom fw-bold">
+                  <tr>
+                      <th colspan="2">Kleuren</th>
+                      <th colspan="2">Afkortingen</th>
+                  </tr>
+                  <tr>
+                      <th>Kleur</th>
+                      <th>Apparaat</th>
+                      <th>Afkorting</th>
+                      <th>Betekenis</th>
+                  </tr>
+              </thead>
+              <tbody class="table-dark">
+                  <tr>
+                      <td>Groen</td>
+                      <td>PC’s</td>
+                      <td>V</td>
+                      <td>Verdiep</td>
+                  </tr>
+                  <tr>
+                      <td>Blauw</td>
+                      <td>IP Phone</td>
+                      <td>K</td>
+                      <td>Kantoor</td>
+                  </tr>
+                  <tr>
+                      <td>Geel</td>
+                      <td>MFP</td>
+                      <td>W</td>
+                      <td>Workstation</td>
+                  </tr>
+                  <tr>
+                      <td>Rood</td>
+                      <td>Access Point</td>
+                      <td>PR</td>
+                      <td>Router/Printer</td>
+                  </tr>
+                  <tr>
+                      <td>Paars</td>
+                      <td>Docking Station</td>
+                      <td>Res</td>
+                      <td>Reserve</td>
+                  </tr>
+                  <tr>
+                      <td>Grijs</td>
+                      <td>Reserve</td>
+                      <td>U</td>
+                      <td>Uninterrupted Power Supply</td>
+                  </tr>
+              </tbody>
+          </table></p>
+          <p>De bovenstaande tabel geeft een verduidelijking van de afkortingen en kleuren die er gebruikt worden in het plan zelf. De namen die bestaan uit een samenstelling van de afkortingen zorden hierdoor snel duidelijk.</p>
+          </article>
+        </div>
+        <div class="col-xl-6">
+          <figure>
+            <img src="assets/images/patchplan.png" class="img-fluid" alt="patchplan deel 1 copyright sander murrath">
+            <figcaption>Patchplan deel 1</figcaption>
+            <img src="assets/images/patchplan2.png" class="img-fluid" alt="patchplan deel 2 copyright sander murrath">
+            <figcaption>Patchplan deel 2</figcaption>
+          </figure>
+          </div>
+          <hr class="my-4 border-primary border-2">
+
+          <article class="col-xl-6">
+            <article>
+              <h2 class="text-center">Racklayout</h2>
+              <p>De racklayout is gebaseerd op wat er te zien is en gestructureerd is in het fysieke bekabelingsplan. Dit als basis genomen om een racklaytou te tekenen.</p>
+              <p>Het belangrijke gedeelte van de racklayout is documenteren welke apparaten waar steken en hoeveel ruimte dat deze innemen op de serverrack</p>
+              <p>Het laatste deel hiervan is de bekabeling tussen alle netwerkcomponenten. Kijken dat dit op elkaar is afgestemd.</p>
+            </article>
+          </article>
+          <article class="col-xl-6">
+            <div class="row">
+            <div class="col-md-6">
+              <figure>
+                <img src="assets/images/racklayout.png" class="img-fluid" alt="racklayout copyright sander murrath">
+                <figcaption>Racklayout in packet tracer</figcaption>
+                </figure>
+              </div>
+              <div class="col-xl-6">
+                <figure>
+                  <img src="assets/images/racklayout2.png" class="img-fluid" alt="racklayout2 copyright sander murrath">
+                  <figcaption>Racklayout uitgewerkt</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+          <hr class="my-4 border-primary border-2">
+
+          <div class="col-xl-6">
+            <h2 class="text-center">Aankooplijst</h2>
         <p>Het laatste deel is de aankooplijst. Hierin worden, buiten de end devices, alle gebruikte apparatuur in opgelijst. Zodat alles een rpijskaartje krijgt. Alles van kabels tot sxitches tot allmounts en kabelgoten wordt in de lijst opgenomen. </p>
         <p>Belangrijk bij deze aankooplijst is dat er links zijn naar de datasheets. Deze worden gemaakt door de producten van het device en zorgt ervoor dat je alle correcte specificaties hebt. Hier kan je dan op terugvallen mocht dit nodig zijn. En je weet veel beter wat je in huis haalt van devices. Dit laatste is ook belangrijk voor de certificering van de devices.</p>
-      </article>
-      <hr class="my-4 border-primary border-2">
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+          </div>
+          <div class="col-xl-6">
+            <figure>
+              <img src="assets/images/aankooplijst.png" class="img-fluid" alt="aankooplijst copyright sander murrath">
+              <figcaption>Screenshot van de aankooplijst</figcaption>
+            </figure>
+          </div>
+          <hr class="my-4 border-primary border-2">
+
+  </main>
 
 <footer class="py-4 text-center">
   <div class="container">

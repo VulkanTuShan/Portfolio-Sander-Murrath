@@ -27,28 +27,27 @@
 </head>
  
 <body>
-  <nav class="navbar">
-    <button class="navbar-toggler bg-light" type="button" id="menu-toggle">
-      <span class="navbar-toggler-icon"></span>
+  <header class="">
+    <button class="navbar-toggler bg-light btn-lg p-2" type="button" id="menu-toggle">
+      <i class="bi bi-list"></i>
     </button>
-    <div class="ms-auto">
-        <h1 class="text-light header-title">Portfolio Sander Murrath</h1>
-    </div>
-    <div class="ms-auto"> </div>
-  </nav>
-  <div class="fly-out-menu mobile-hidden" id="sidebar">
-    <ul>
-      <li><a href="index.html"> <i class="bi bi-house"></i>Home</a></li>
-      <li><a href="contact.html"> <i class="bi bi-envelope"></i> Contact</a></li>
-      <li><a href="portfolio.html"> <i class="bi bi-file-earmark-text"></i> Portfolio</a></li>
-      <li><a href="bekabeling.html"> <i class="bi bi-ethernet"></i> WebWiz</a></li>
-      <li><a href="python.html  "> <i class="bi bi-filetype-py"></i> Python</a></li>
-      <li><a href="routering.html"> <i class="bi bi-router"></i> Routering</a></li>
-      <li><a href="scripting.html"> <i class="bi bi-filetype-sh"></i> Scripting</a></li>
-      <li><a href="SNBproject.html"> <i class="bi bi-kanban-fill"></i> SNB-Project</a></li>
-      <li><a href="stage.html"> <i class="bi bi-person-workspace"></i> Stage</a></li>
-    </ul>
-  </div>
+        <h1 class="text-light text-center header-title">Portfolio Sander Murrath</h1>
+  </header>
+  <aside class="fly-out-menu mobile-hidden" id="sidebar">
+    <nav class="">
+      <ul>
+        <li><a href="index.html" class="nav-link text-white ps-1"> <i class="bi bi-house"></i>Home</a></li>
+        <li><a href="portfolio.html" class="nav-link text-white ps-1"> <i class="bi bi-file-earmark-text"></i> Portfolio</a></li>
+        <li><a href="bekabeling.html" class="nav-link text-white ps-5"> <i class="bi bi-ethernet"></i> WebWiz</a></li>
+        <li><a href="python.html" class="nav-link text-white ps-5"> <i class="bi bi-filetype-py"></i> Python</a></li>
+        <li><a href="routering.html" class="nav-link text-white ps-5"> <i class="bi bi-router"></i> Routering</a></li>
+        <li><a href="scripting.html" class="nav-link text-white ps-5"> <i class="bi bi-filetype-sh"></i> Scripting</a></li>
+        <li><a href="SNBproject.html" class="nav-link text-white ps-5"> <i class="bi bi-kanban-fill"></i> SNB-Project</a></li>
+        <li><a href="stage.html" class="nav-link text-white ps-5"> <i class="bi bi-person-workspace"></i> Stage</a></li>
+        <li><a href="contact.html" class="nav-link text-white ps-1"> <i class="bi bi-envelope"></i> Contact</a></li>
+      </ul>
+      <nav>
+  </aside>
   <div class="overlay" id="overlay"></div>
 
 <main class="py-5">
@@ -71,7 +70,7 @@
             </article>
 
 
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide d-none d-lg-block">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>

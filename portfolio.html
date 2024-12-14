@@ -27,71 +27,102 @@
 </head>
  
 <body>
-  <nav class="navbar">
-    <button class="navbar-toggler bg-light" type="button" id="menu-toggle">
-      <span class="navbar-toggler-icon"></span>
+  <header class="">
+    <button class="navbar-toggler bg-light btn-lg p-2" type="button" id="menu-toggle">
+      <i class="bi bi-list"></i>
     </button>
-    <div class="ms-auto">
-        <h1 class="text-light header-title">Portfolio Sander Murrath</h1>
-    </div>
-    <div class="ms-auto"> </div>
-  </nav>
-  <div class="fly-out-menu mobile-hidden" id="sidebar">
-    <ul>
-        <li><a href="index.html"> <i class="bi bi-house"></i>Home</a></li>
-        <li><a href="contact.html"> <i class="bi bi-envelope"></i> Contact</a></li>
-        <li><a href="portfolio.html"> <i class="bi bi-file-earmark-text"></i> Portfolio</a></li>
-        <li><a href="bekabeling.html"> <i class="bi bi-ethernet"></i> WebWiz</a></li>
-        <li><a href="python.html  "> <i class="bi bi-filetype-py"></i> Python</a></li>
-        <li><a href="routering.html"> <i class="bi bi-router"></i> Routering</a></li>
-        <li><a href="scripting.html"> <i class="bi bi-filetype-sh"></i> Scripting</a></li>
-        <li><a href="SNBproject.html"> <i class="bi bi-kanban-fill"></i> SNB-Project</a></li>
-        <li><a href="stage.html"> <i class="bi bi-person-workspace"></i> Stage</a></li>
+        <h1 class="text-light text-center header-title">Portfolio Sander Murrath</h1>
+  </header>
+  <aside class="fly-out-menu mobile-hidden" id="sidebar">
+    <nav class="">
+      <ul>
+        <li><a href="index.html" class="nav-link text-white ps-1"> <i class="bi bi-house"></i>Home</a></li>
+        <li><a href="portfolio.html" class="nav-link text-white ps-1"> <i class="bi bi-file-earmark-text"></i> Portfolio</a></li>
+        <li><a href="bekabeling.html" class="nav-link text-white ps-5"> <i class="bi bi-ethernet"></i> WebWiz</a></li>
+        <li><a href="python.html" class="nav-link text-white ps-5"> <i class="bi bi-filetype-py"></i> Python</a></li>
+        <li><a href="routering.html" class="nav-link text-white ps-5"> <i class="bi bi-router"></i> Routering</a></li>
+        <li><a href="scripting.html" class="nav-link text-white ps-5"> <i class="bi bi-filetype-sh"></i> Scripting</a></li>
+        <li><a href="SNBproject.html" class="nav-link text-white ps-5"> <i class="bi bi-kanban-fill"></i> SNB-Project</a></li>
+        <li><a href="stage.html" class="nav-link text-white ps-5"> <i class="bi bi-person-workspace"></i> Stage</a></li>
+        <li><a href="contact.html" class="nav-link text-white ps-1"> <i class="bi bi-envelope"></i> Contact</a></li>
       </ul>
-  </div>
+      <nav>
+  </aside>
   <div class="overlay" id="overlay"></div>
-
 
   <main class="py-5">
     <div class="container text-light">
       <div class="row">
         <h2 class="font-weight-bold text-center">Portfolio</h2>
         <p>Op deze pagina worden de projecten voorgesteld waar ik deel van ben of was.<br> Dit om aan te tonen waar ik al mee bezig ben geweest en wat er op dit moment gaande is in mijn professioneel leven.</p>
+        <div class="row">
         <div class="col-xxl-6">
           <figure class="figure mb-3">
             <h4>WebWiz</h4>
-            <a href="bekabeling.html"><img class="rounded figure-img" src="assets/images/bekabekingsplan.png" alt="bekabelingplan" height="300" width="500"></a>
+            <a href="bekabeling.html"><img class="rounded figure-img img-fluid" src="assets/images/bekabekingsplan.png" alt="bekabelingplan" height="300" width="500"></a>
             <figcaption class="figcaption">In dit project werd de opdracht gegeven om een plan uit te tekenen om de bekabeling van een klein bedrijf op orde te zetten.</figcaption>
           </figure>
+         </div>
+         <div class="col-xxl-6">
           <figure class="figure mb-3">
             <h4>Python</h4>
-            <a href="python.html"><img class="rounded figure-img" src="assets/images/oefening_galgje.png" alt="oefening galgje" height="300" width="500"></a>
-            <figcaption class="figcaption">Schermafbeelding over een python oefening</figcaption>
+            <a href="python.html"><svg class="bd-placeholder-img figure-img img-fluid rounded" width="300" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" focusable="false">
+              <rect width="100%" height="100%" fill="#868e96"></rect>
+              <text x="50%" y="50%" fill="#dee2e6" dy=".3em" text-anchor="middle">Placeholder</text>
+            </svg></a>
+            <figcaption class="figcaption">placeholder</figcaption>
           </figure>
+          </div>
+          </div>
+
+
+        <div class="row">
+        <div class="col-xxl-6">
           <figure class="figure mb-3">
-            <h4>Powershell</h4>
-            <a href="scripting.html"><img class="rounded figure-img" src="assets/images/powershell.png" alt="powershell ISE" height="300" width="500"></a>
-            <figcaption class="figcaption">Afbeelding van powershell ISE</figcaption>
+            <h4>Scripting</h4>
+            <a href="scripting.html"><svg class="bd-placeholder-img figure-img img-fluid rounded" width="300" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" focusable="false">
+              <rect width="100%" height="100%" fill="#868e96"></rect>
+              <text x="50%" y="50%" fill="#dee2e6" dy=".3em" text-anchor="middle">Placeholder</text>
+            </svg></a>
+            <figcaption class="figcaption">placeholder</figcaption>
           </figure>
         </div>
-  
         <div class="col-xxl-6">
           <figure class="figure mb-3">
             <h4>Routering</h4>
-            <a href="routering.html"><img class="rounded figure-img" src="assets/images/routering.png" alt="routering" height="300" width="500"></a>
-            <figcaption class="figcaption">Project routering</figcaption>
-          </figure>
-          <figure class="figure mb-3">
-            <h4>SNB-Project</h4>
-            <a href="SNBproject.html"><img class="rounded figure-img" src="assets/images/SNBproject.png" alt="project foto" height="300" width="500"></a>
-            <figcaption class="figcaption">SNB project voorbeeld</figcaption>
-          </figure>
-          <figure class="figure mb-3">
-            <h4>Stage</h4>
-            <a href="stage.html"><img class="rounded figure-img" src="assets/images/stage.jpg" alt="stage verslag" height="300" width="500"></a>
-            <figcaption class="figcaption">Stage verslag</figcaption>
+            <a href="routering.html"><svg class="bd-placeholder-img figure-img img-fluid rounded" width="300" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" focusable="false">
+              <rect width="100%" height="100%" fill="#868e96"></rect>
+              <text x="50%" y="50%" fill="#dee2e6" dy=".3em" text-anchor="middle">Placeholder</text>
+            </svg></a>
+            <figcaption class="figcaption">placeholder</figcaption>
           </figure>
         </div>
+        </div>
+
+
+        <div class="row">
+        <div class="col-xxl-6">
+          <figure class="figure mb-3">
+            <h4>Kanban-Project</h4>
+            <a href="SNBproject.html"><svg class="bd-placeholder-img figure-img img-fluid rounded" width="300" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" focusable="false">
+              <rect width="100%" height="100%" fill="#868e96"></rect>
+              <text x="50%" y="50%" fill="#dee2e6" dy=".3em" text-anchor="middle">Placeholder</text>
+            </svg></a>
+            <figcaption class="figcaption">placeholder</figcaption>
+          </figure>
+        </div>
+        <div class="col-xxl-6">
+          <figure class="figure mb-3">
+            <h4>Stage</h4>
+            <a href="stage.html"><svg class="bd-placeholder-img figure-img img-fluid rounded" width="300" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" focusable="false">
+              <rect width="100%" height="100%" fill="#868e96"></rect>
+              <text x="50%" y="50%" fill="#dee2e6" dy=".3em" text-anchor="middle">Placeholder</text>
+            </svg></a>
+            <figcaption class="figcaption">placeholder</figcaption>
+          </figure>
+        </div>
+        </div>
+
       </div>
     </div>
   </main>

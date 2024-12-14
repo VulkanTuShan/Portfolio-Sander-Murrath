@@ -17,10 +17,10 @@ document.getElementById("overlay").addEventListener("click", function() {
 });
 
 //close the fly-out with button
-document.getElementById("menu-close").addEventListener("click", function() {
-    var sidebar = document.getElementById("sidebar");
-    var overlay = document.getElementById("overlay");
-
-    sidebar.classList.remove("active");
-    overlay.classList.remove("active");
-});
+//document.getElementById("menu-close").addEventListener("click", function() {
+//    var sidebar = document.getElementById("sidebar");
+//    var overlay = document.getElementById("overlay");
+//
+//    sidebar.classList.remove("active");
+//    overlay.classList.remove("active");
+//});
